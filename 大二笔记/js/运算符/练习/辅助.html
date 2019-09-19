@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <input type="date" id='d'>
+    <script>
+        var d = document.getElementById('d');
+        var nw = confirm('女王请点击确定');//返回值肯定是布尔值
+        //先有一个事件才会有值
+        d.oninput = function(){
+            var dv = d.value;//肯定返回一个字符串  并且格式为  0000-00-00
+            var 日期判断结果 = (dv == '2019=03-08');
+            if(nw && 日期判断结果){
+              alert('5折');
+            }
+            else(nw &&){
+                alert('不打折')
+            }
+        var dv = d.value;//肯定返回一个字符串  并且格式为  0000-00-00
+        var 日期判断结果 = (dv == '2019=03-08');
+        alert(dv);
+
+
+        //console.log(nw);
+        //d.oninput = function(){
+            //d.value == '2019-03-09'   返回值 对 错
+            //tuue/false               true/false
+          //  d.value == '2019-03-08' && nw ? alert('5折')):alert('不打折');
+        //}
+
+
+    </script>
+</body>
+</html>
